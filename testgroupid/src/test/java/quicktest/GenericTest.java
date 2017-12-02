@@ -26,8 +26,17 @@ public class GenericTest {
         VeryGeneric vgg = new VeryGeneric();
         System.out.println("VeryGeneric<Object> " + vg.getClass().getName() + " | VeryGeneric " + vgg.getClass().getName());
 
-        GenericA<Integer> lastExampleA = new GenericA<>();
         VeryGeneric<GenericA<?>> lastExampleVeryGeneric = new VeryGeneric<>();
+        System.out.println(lastExampleVeryGeneric.getClass().getName());
+
+        //I suppose it becomes generic without mentioning concrete type (in super class)
+        //that later goes for Object (as was mentioned in Java 8 reference chapter 14 page 420 in russian version of book)
+        NotGeneric ng = new NotGeneric();
+        ng.getObj(5);
+
+        //So we can use 'super' keyword to bound lower class for wildcard argument
+        //so here we can use all classes that are super for integer (but sure, sub for Number because it is in restriction of GenericA class)
+        VeryGeneric<GenericA<? super Integer>> veryGeneric = new VeryGeneric<>();
         System.out.println(lastExampleVeryGeneric.getClass().getName());
 
     }
