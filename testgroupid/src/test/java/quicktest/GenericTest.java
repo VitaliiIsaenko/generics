@@ -1,6 +1,4 @@
-package classes;
-
-import java.util.Enumeration;
+package quicktest;
 
 public class GenericTest {
     public static void main(String[] args) {
