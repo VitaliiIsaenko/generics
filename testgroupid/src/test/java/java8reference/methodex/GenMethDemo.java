@@ -1,4 +1,4 @@
-package java8reference.method;
+package java8reference.methodex;
 
 public class GenMethDemo {
     static <T extends Comparable<T>, V extends T> boolean isIn(T x, V[] y) {

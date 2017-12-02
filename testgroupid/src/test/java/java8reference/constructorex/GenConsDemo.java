@@ -1,4 +1,4 @@
-package java8reference.constructor;
+package java8reference.constructorex;
 
 public class GenConsDemo {
     public static void main(String[] args) {

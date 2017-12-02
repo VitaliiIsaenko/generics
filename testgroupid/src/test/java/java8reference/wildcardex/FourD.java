@@ -1,4 +1,4 @@
-package java8reference.wildcard;
+package java8reference.wildcardex;
 
 public class FourD extends ThreeD {
     int t;
