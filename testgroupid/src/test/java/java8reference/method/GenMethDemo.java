@@ -17,7 +17,15 @@ public class GenMethDemo {
             System.out.println("2 is in nums");
         }
 
+        String strings[] = {"one", "two", "three", "four"};
 
+        if (isIn("one", strings)) {
+            System.out.println("one is in strings");
+        }
+
+        if (!isIn("seven", strings)) {
+            System.out.println("seven isn't in strings");
+        }
     }
 
 }
